@@ -1,0 +1,257 @@
+/* navbar header */
+
+header{
+    /* position: fixed;
+    top: 0; left: 0;right: 0; */
+    background-color: rgb(45 212 191);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    list-style: none;
+    line-height: none!important;
+  }
+  a{
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: none!important;
+  }
+  header .logo{
+    max-width: 20%;
+    color: #333;
+  }
+  
+  header a img{
+    max-width: 50%;
+  }
+  
+  header .navbar ul{
+  list-style: none;
+  
+  }
+  
+  header .navbar ul li{
+    position: relative;
+    float: left;
+  }
+  header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-transform: uppercase;
+  }
+  header .navbar ul li a:hover{
+    background: rgb(45 212 191);
+    background: linear-gradient(90deg, rgb(0, 195, 169) 5%, rgba(45,212,191,1) 71%);
+  color: white;
+  }
+  .acctive{
+    background: rgb(45 212 191);
+    background: linear-gradient(90deg, rgba(45,212,191,1) 5%, rgba(45,212,191,1) 71%);
+  color: white;
+  }
+  header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 250px;
+  background: #fff;
+  display: none;
+  }
+  header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba (0,0,0,0.1);
+  }
+  header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+  
+  }
+  header .navbar ul li:focus-within>ul,
+  header .navbar ul li:hover>ul{
+    display: initial;
+  }
+  
+  #menu-bar{
+    display: none;
+  }
+  header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  
+  }
+  
+  /* navbar header */
+  .text{
+    padding-top: 200px;
+    font-size: 100px;
+  }
+
+  .mainbanner{
+    height: 80vh;
+    background:url(../images/orgomedbanner.jpg) repeat  100%;
+    background-size: cover;
+    position: relative;
+}
+.maincircl{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  display: grid;
+  place-content: center;
+  border: 6px solid rgba(255, 255, 255, 0.9);
+}
+.contacthome{
+  height: 70vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/contactbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+.textpro{
+  position: absolute;
+ 
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.producthome{
+  height: 70vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/productsbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+.Abouthome{
+  height: 70vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aboutbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+
+.dirct{
+  background: url(../Component/Home/images/stockiest.jpg);
+  background-position: 0%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+  @media(max-width:991px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+     
+      background-color: rgb(45 212 191);
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  header label {
+      display: initial;
+      color: white;
+  }
+
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      right: 0%;
+      background: rgb(0, 0, 0);
+      color: #eee;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      display: none;
+
+  }
+
+  header .navbar ul li {
+      width: 100%;
+  }
+
+  header .navbar ul li ul {
+      position: relative;
+      width: 100%;
+
+  }
+
+  header .navbar ul li ul li {
+      background: #eee;
+
+  }
+
+  header .navbar ul li ul li ul {
+      width: 100%;
+      left: 0;
+
+  }
+
+  #menu-bar:checked~.navbar {
+      display: initial;
+  }
+
+  header a img {
+      max-width: 100%;
+      -webkit-box-shadow: 2px 90px 0 rgb(0 0 0 / 5%);
+      box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+      float: right;
+  }
+
+  .mainbanner{
+    height: 100vh;
+    background:url(../images/RESP/orgomedbanner.jpg) repeat  100%;
+    background-size: cover;
+    position: relative;
+}
+.maincircl{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+  display: grid;
+  place-content: center;
+  border: 6px solid rgba(255, 255, 255, 0.9);
+}
+.contacthome{
+  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/RESP/contactbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+.textpro{
+  position: absolute;
+ 
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.producthome{
+  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/RESP/productsbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+.Abouthome{
+  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/RESP/aboutbanner.jpg) repeat  100%;
+  background-size: cover;
+  position: relative;
+}
+  }
+
